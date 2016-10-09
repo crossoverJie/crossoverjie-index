@@ -1,54 +1,263 @@
 <!DOCTYPE html>
-<!--[if lt IE 7]>
-<html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
-<!--[if IE 7]>
-<html class="no-js lt-ie9 lt-ie8"> <![endif]-->
-<!--[if IE 8]>
-<html class="no-js lt-ie9"> <![endif]-->
-<!--[if gt IE 8]><!-->
-<html class="no-js"> <!--<![endif]-->
+<!--[if IE 8]>         <html class="no-js ie8"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+
 <head>
+
+    <!-- Basics -->
     <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title></title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Home</title>
+    <link name="author" href="" />
     <meta name="description" content="">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+    <!-- Favicons -->
+    <link rel="shortcut icon" href="img/favicons/favicon.ico">
 
-    <link rel="stylesheet" href="css/normalize.css">
+    <!-- Mobile -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/normalize.min.css">
     <link rel="stylesheet" href="css/main.css">
-    <script src="js/vendor/modernizr-2.6.2.min.js"></script>
+
+    <!-- Fonts -->
+    <link rel='stylesheet' href='http://fonts.googleapis.com/css?family=Lato:300,400,700'>
+
 </head>
 <body>
-<!--[if lt IE 7]>
-<p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade
-    your browser</a> to improve your experience.</p>
-<![endif]-->
 
-<!-- Add your site or application content here -->
-<p>Hello world! This is HTML5 Boilerplate.</p>
+<div class="wrapper">
 
-<script src="js/vendor/jquery-1.10.2.min.js"></script>
-<script>window.jQuery || document.write('<script src="js/vendor/jquery-1.10.2.min.js"><\/script>')</script>
-<script src="js/plugins.js"></script>
+    <header>
+        <a class="menu-icon jiji">
+            <span></span>
+        </a>
+        <nav class="menu visuallyhidden">
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About me</a></li>
+                <li><a href="#work">My Works</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="home" class="row">
+        <div class="overlay">
+            <div class="col home-title jiji">
+                <h1>crossoverJie</h1>
+                <h2>Java Engineer / BaseketBall Baller</h2>
+                <a href="http://crossoverjie.top" target="_blank" class="but">My Blog</a>
+            </div>
+        </div>
+    </section>
+
+    <section id="about" class="row">
+        <div class="page about-content">
+            <div class="col about-title">
+                <h3
+                        data-100="-webkit-transform: translateX(100px); opacity:0;"
+                        data-500="-webkit-transform: translateX(0px); opacity:1;"
+                >About me</h3>
+            </div>
+            <div class="col empty">&nbsp;</div>
+            <div class="col about-description">
+                <p
+                        data-100="opacity:0;"
+                        data-500="opacity:1;"
+                >生于94年，学渣代表。<br/>
+                    在猪网从事Java后端开发,热爱前端(包括web前端、移动端)技术。<br/>
+                    大学毕业之前痴迷Street Ball<br/>
+                    <img src="img/iverson.gif">
+                </p>
+                <a href="#contact" class="but">Get in touch</a>
+            </div>
+            <div class="col empty">&nbsp;</div>
+        </div>
+    </section>
+
+    <section id="services" class="row">
+        <div class="services-content page">
+            <div class="col services-design"
+                 data-600="-webkit-transform: translateY(10px); opacity:0;"
+                 data-800="-webkit-transform: translateY(0px); opacity:1;"
+            >
+                <span class="icon-design"></span>
+                <ul>
+                    <li>Java</li>
+                    <li>Java api</li>
+                    <li>Spring SpringMVC Mybatis</li>
+                    <li>Hibernate Lucene..</li>
+                    <li>Mysql Oracel的安装与删库</li>
+
+                </ul>
+            </div>
+            <div class="col services-frontend"
+                 data-600="-webkit-transform: translateY(50px); opacity:0;"
+                 data-800="-webkit-transform: translateY(0px); opacity:1;"
+            >
+                <span class="icon-computer"></span>
+                <ul>
+                    <li>web</li>
+                    <li>HTML5</li>
+                    <li>jQuery & JavaScript libraries</li>
+
+                </ul>
+            </div>
+            <div class="col services-team"
+                 data-600="-webkit-transform: translateY(100px); opacity:0;"
+                 data-800="-webkit-transform: translateY(0px); opacity:1;"
+            >
+                <span class="icon-music"></span>
+                <ul>
+                    <li>develop skill</li>
+                    <li>eclipse IDEA pl/sql</li>
+                    <li>linux</li>
+                    <li>Team working</li>
+                    <li>GIT SVN</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <hr>
+
+    <section id="work" class="row">
+        <div class="work-content page">
+            <div class="col work-title">
+                <h3
+                        data-900="-webkit-transform: translateX(-100px); opacity:0;"
+                        data-1300="-webkit-transform: translateX(0px); opacity:1;"
+                >My latest work</h3>
+            </div>
+            <div class="col empty">&nbsp;</div>
+            <div class="col work-description">
+                <p
+                        data-900="opacity:0;"
+                        data-1300="opacity:1;"
+                >A selection of recent projects I've been working on: landing pages, websites, email marketing...</p>
+            </div>
+            <div class="col empty">&nbsp;</div>
+        </div>
+        <div class="work-examples page">
+            <div class="col work-item"
+                 data-1300="opacity:0;"
+                 data-1400="opacity:1;"
+            >
+                <img src="img/works/1.jpg" alt="">
+                <div class="work-item-inside">
+                    <div class="work-item-inside-content">
+                        <h4>Design</h4>
+                        <a href="#" class="but">Click here</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col work-item"
+                 data-1300="opacity:0;"
+                 data-1400="opacity:1;"
+            >
+                <img src="img/works/1.jpg" alt="">
+                <div class="work-item-inside">
+                    <div class="work-item-inside-content">
+                        <h4>Design</h4>
+                        <a href="#" class="but">Click here</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col work-item"
+                 data-1300="opacity:0;"
+                 data-1600="opacity:1;"
+            >
+                <img src="img/works/1.jpg" alt="">
+                <div class="work-item-inside">
+                    <div class="work-item-inside-content">
+                        <h4>Design</h4>
+                        <a href="#" class="but">Click here</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col work-item"
+                 data-1300="opacity:0;"
+                 data-1400="opacity:1;"
+            >
+                <img src="img/works/1.jpg" alt="">
+                <div class="work-item-inside">
+                    <div class="work-item-inside-content">
+                        <h4>Design</h4>
+                        <a href="#" class="but">Click here</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col work-item"
+                 data-1300="opacity:0;"
+                 data-1500="opacity:1;"
+            >
+                <img src="img/works/1.jpg" alt="">
+                <div class="work-item-inside">
+                    <div class="work-item-inside-content">
+                        <h4>Design</h4>
+                        <a href="#" class="but">Click here</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col work-item"
+                 data-1300="opacity:0;"
+                 data-1600="opacity:1;"
+            >
+                <img src="img/works/1.jpg" alt="">
+                <div class="work-item-inside">
+                    <div class="work-item-inside-content">
+                        <h4>Design</h4>
+                        <a href="#" class="but">Click here</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <hr>
+
+    <section id="contact" class="row">
+        <div class="contact-content page">
+            <div class="col contact-title">
+                <h3
+                        data-100="-webkit-transform: translateX(100px); opacity:0;"
+                        data-500="-webkit-transform: translateX(0px); opacity:1;"
+                >Get in touch</h3>
+            </div>
+            <div class="col empty">&nbsp;</div>
+            <div class="col contact-description">
+                <a href="mailto:crossoverjie@gmail.com" class="but">crossoverjie@gmail.com</a>
+            </div>
+            <div class="col empty">&nbsp;</div>
+            <div class="col span_12 social">
+                <a class="icon-twitter" href="#" target="_blank"></a>
+                <a class="icon-github" href="#" target="_blank"></a>
+                <a class="icon-instagram" href="#" target="_blank"></a>
+                <a class="icon-linkedin" href="#" target="_blank"></a>
+            </div>
+        </div>
+    </section>
+
+    <footer id="footer" class="row">
+        <div class="footer-content page">
+            <div class="col f1">
+                <p>Copyright &copy; 2016.crossoverJie</a></p>
+            </div>
+        </div>
+    </footer>
+
+</div>
+
+<div class="loader"></div>
+
+<!-- JavaScript -->
+<script src="js/jquery-1.11.0.min.js"></script>
+<script src="js/modernizr-2.6.2.min.js"></script>
+<script src="js/skrollr.js"></script>
 <script src="js/main.js"></script>
 
-<!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
-<script>
-    (function (b, o, i, l, e, r) {
-        b.GoogleAnalyticsObject = l;
-        b[l] || (b[l] =
-                function () {
-                    (b[l].q = b[l].q || []).push(arguments)
-                });
-        b[l].l = +new Date;
-        e = o.createElement(i);
-        r = o.getElementsByTagName(i)[0];
-        r.parentNode.insertBefore(e, r)
-    }(window, document, 'script', 'ga'));
-    ga('create', 'UA-XXXXX-X');
-    ga('send', 'pageview');
-</script>
 </body>
+
 </html>
